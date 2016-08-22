@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Catch Good Words</string>
+    <string name="app_name">Catch Good Words Game!</string>
+<string name="speak">This application recognizes your voice</string>
+<string name="say">Click Here and say the good word</string>
+<string name="skip">Skip Bad Word</string>
+<string name="currentScoreText">Current Score:</string>
+</resources>
+

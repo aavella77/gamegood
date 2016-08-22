@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.moongoal.catchgoodwords"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".CatchGoodWords"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+<!-- The application's publisher ID assigned by AdMob -->
+<meta-data android:value="a14d0be00c46be2" android:name="ADMOB_PUBLISHER_ID" />
+
+<!-- AdMobActivity definition -->
+<activity android:name="com.admob.android.ads.AdMobActivity"
+android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+android:configChanges="orientation|keyboard|keyboardHidden" />
+
+<!-- Track Market installs -->
+<receiver android:name="com.admob.android.ads.analytics.InstallReceiver"
+android:exported="true">
+
+<intent-filter>
+<action android:name="com.android.vending.INSTALL_REFERRER" />
+</intent-filter>
+</receiver>
+
+
+    </application>
+    <uses-sdk android:minSdkVersion="8" />
+    
+<!-- AdMob SDK requires Internet permission -->
+<uses-permission android:name="android.permission.INTERNET" />
+
+</manifest> 
